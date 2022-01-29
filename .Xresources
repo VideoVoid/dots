@@ -1,0 +1,79 @@
+Xft.antialias: 1
+Xft.hinting: 1
+Xft.rgba: rgb
+Xft.hintstyle: hintslight
+Xft.lcdfilter: lcddefault
+!! Colorscheme
+
+! special
+*.foreground: #dcdccc
+*.background: #141c21
+*.cursorColor: #afbfbf
+
+! black
+*.color0: #363636
+*.color8: #626566
+
+! red
+*.color1: #705050
+*.color9: #dca3a3
+
+! green
+*.color2: #60b48a
+*.color10: #68d5ab
+
+! yellow
+*.color3: #dfaf8f
+*.color11: #f0dfaf
+
+! blue
+*.color4: #9ab8d7
+*.color12: #8ec5df
+
+! magenta
+*.color5: #dc8cc3
+*.color13: #ec93d3
+
+! cyan
+*.color6: #8cd0d3
+*.color14: #93e2e3
+
+! white
+*.color7: #dcdccc
+*.color15: #ffffff
+
+!! URxvt Appearance
+urxvt*depth: 32
+urxvt*background: rgba:0000/0000/0200/c800
+!!URxvt.font: xft:Deja Vu Sans Mono:size=10
+URxvt.font: xft:Hack-Regular:pixelsize=16
+!!URxvt.letterSpace: 0
+URxvt.letterSpace: -1
+URxvt.lineSpace: 0
+!!URxvt.geometry: 92x24
+URxvt.internalBorder: 10
+URxvt.cursorBlink: false
+URxvt.cursorUnderline: false
+URxvt.saveline: 2048
+URxvt.scrollBar: false
+URxvt.scrollBar_right: false
+URxvt.urgentOnBell: true
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+
+!! Common Keybinds for Navigations
+URxvt.keysym.Shift-Up: command:\033]720;1\007
+URxvt.keysym.Shift-Down: command:\033]721;1\007
+
+!!copy paste
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+!!scale up/down
+URxvt.keysym.C-minus:     resize-font:smaller
+URxvt.keysym.C-equal:      resize-font:bigger
+URxvt.keysym.C-plus:     resize-font:reset
+
+!! Copy Paste & Other Extensions
+URxvt.perl-ext-common: default,resize-font
+URxvt.resize-font.step: 1
+
